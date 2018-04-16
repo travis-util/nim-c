@@ -22,7 +22,7 @@ install:
   fi
 
 script:
-- cat average_line_length.nim | nim --run average_line_length.nim
+- cat average_line_length.nim | nim compile --run average_line_length.nim
 
 after_script:
 - ls --color ~/.nimble/bin
