@@ -3,6 +3,7 @@
 ## Documentation
 * [*Nim (programming language)*](https://en.wikipedia.org/wiki/Nim_(programming_language))
 * [nim-lang.org](https://nim-lang.org/)
+* [dom96/choosenim](https://github.com/dom96/choosenim)
 
 ### Travis nim
 * [*ccache cache*](https://docs.travis-ci.com/user/caching/#ccache-cache)
