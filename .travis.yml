@@ -9,13 +9,16 @@ env:
 
 cache:
   directories:
+  - ~/.choosenim
   - ~/.nimble
 
 script:
-- if command -v choosenim; then
-    choosenim -y update stable ;
+- |
+  if command -v choosenim; then
+    choosenim show
+    choosenim -yes update stable
   else
-    wget --quiet https://nim-lang.org/choosenim/init.sh && sh init.sh -y ;
+    wget --quiet https://nim-lang.org/choosenim/init.sh && sh init.sh -y
   fi
 
 after_script:
