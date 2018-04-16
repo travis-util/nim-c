@@ -21,6 +21,8 @@ install:
     wget --quiet https://nim-lang.org/choosenim/init.sh && sh init.sh -y
   fi
 
+script: true
+
 after_script:
 - ls --color ~/.nimble/bin
 - choosenim
