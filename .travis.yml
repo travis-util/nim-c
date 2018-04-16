@@ -21,7 +21,8 @@ install:
     wget --quiet https://nim-lang.org/choosenim/init.sh && sh init.sh -y
   fi
 
-script: true
+script:
+- cat average_line_length.nim | nim --run average_line_length.nim
 
 after_script:
 - ls --color ~/.nimble/bin
