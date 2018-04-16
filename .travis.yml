@@ -3,5 +3,17 @@ compiler:
 - clang
 - gcc
 
+env:
+  global:
+  - PATH=~/.nimble/bin:$PATH
+
+cache:
+  directories:
+  - ~/.nimble
+
 script:
-- wget https://nim-lang.org/choosenim/init.sh && sh init.sh -y
+- wget --quiet https://nim-lang.org/choosenim/init.sh && sh init.sh -y
+
+after_script:
+- ls --color ~/.nimble/bin
+- nim
