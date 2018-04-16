@@ -3,6 +3,7 @@
 ## Documentation
 * [*Nim (programming language)*](https://en.wikipedia.org/wiki/Nim_(programming_language))
 * [nim-lang.org](https://nim-lang.org/)
+* [*Awesome Nim*](https://github.com/VPashkov/awesome-nim)
 * [dom96/choosenim](https://github.com/dom96/choosenim)
 
 ### Travis nim
