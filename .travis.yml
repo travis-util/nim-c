@@ -12,7 +12,7 @@ cache:
   - ~/.choosenim
   - ~/.nimble
 
-script:
+install:
 - |
   if command -v choosenim; then
     choosenim -yes update self
