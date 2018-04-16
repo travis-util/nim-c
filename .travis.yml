@@ -15,7 +15,7 @@ cache:
 script:
 - |
   if command -v choosenim; then
-    choosenim show
+    choosenim -yes show
     choosenim -yes update stable
   else
     wget --quiet https://nim-lang.org/choosenim/init.sh && sh init.sh -y
