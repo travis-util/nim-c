@@ -13,11 +13,12 @@ cache:
 
 script:
 - if command -v choosenim; then
-    choosenim update stable ;
+    choosenim -y update stable ;
   else
     wget --quiet https://nim-lang.org/choosenim/init.sh && sh init.sh -y ;
   fi
 
 after_script:
 - ls --color ~/.nimble/bin
+- choosenim
 - nim
