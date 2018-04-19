@@ -28,4 +28,4 @@ after_script:
 - ls --color ~/.nimble/bin
 - choosenim
 - nim
-- nodejs --version
+- node --version
